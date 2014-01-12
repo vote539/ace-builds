@@ -9,7 +9,7 @@ var Range = require("../range").Range;
 var OctaveHighlightRules = require("./octave_highlight_rules").OctaveHighlightRules;
 
 var Mode = function() {
-	this.HighlightRules = new OctaveHighlightRules();
+	this.HighlightRules = OctaveHighlightRules;
 	this.$outdent = new MatchingBraceOutdent();
 };
 oop.inherits(Mode, TextMode);
