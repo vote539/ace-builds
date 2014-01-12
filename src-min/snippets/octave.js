@@ -1,0 +1,1 @@
+define("ace/snippets/octave",["require","exports","module"],function(e,t,n){t.snippetText="",t.scope="octave"})
