@@ -11,7 +11,6 @@ var OctaveHighlightRules = require("./octave_highlight_rules").OctaveHighlightRu
 var Mode = function() {
 	this.HighlightRules = new OctaveHighlightRules();
 	this.$outdent = new MatchingBraceOutdent();
-	this.$tokenizer = new Tokenizer(this.HighlightRules.getRules());
 };
 oop.inherits(Mode, TextMode);
 
